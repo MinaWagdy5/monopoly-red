@@ -121,7 +121,7 @@
         .then(response => response.json())
         .then(data => {
           if (data.balance !== undefined) {
-            document.getElementById('displayBalance').innerText = "M" + data.balance;
+            document.getElementById('displayBalance').innerText = data.balance;
           } else {
             document.getElementById('displayBalance').innerText = "Error";
           }
